@@ -1,0 +1,28 @@
+package PACKAGE_NAME;
+
+import java.util.Scanner;
+
+public class simpleCalculator {
+    public static void main(String[] args) {
+        Scanner in= new Scanner(System.in);
+
+        System.out.println("Input the first number");
+        int firstNumber = in.nextInt();
+
+        System.out.println("Input the second number");
+        int secondNumber = in.nextInt();
+
+        System.out.println("Input the operand (+-/*):");
+        char operand = in.next().charAt(0);
+
+        if (operand=='+'){
+            System.out.println("Result is:"+(firstNumber+secondNumber));
+        }else if (operand=='-'){
+            System.out.println("Result is:"+(firstNumber-secondNumber));
+        }else if (operand=='/'){
+            System.out.println("Result is :"+(firstNumber/secondNumber));
+        }else if (operand=='*'){
+            System.out.println("Result is :"+(firstNumber*secondNumber));
+        }
+    }
+}
